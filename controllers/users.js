@@ -4,6 +4,7 @@ let users = [
   {
     id: uuidv4(),
     name: "doua",
+    age: 21,
   },
 ];
 
@@ -38,5 +39,20 @@ export function createUser(req, res) {
 // @route: DELETE /users/:id
 export function deleteUser(req, res) {
   users = users.filter((user) => user.id !== req.params.id);
+  res.send(users);
+}
+
+// @desc: update user's data (partial update)
+// @route: PATCH /users/:id
+export function updateUser(req, res) {
+  const { name, age } = req.body;
+  const user = users.find((user) => user.id === req.params.id);
+  if (name) {
+    user.name = name;
+  }
+  if (age) {
+    user.age = age;
+  }
+  users = users.map((e) => (e.id === req.params.id ? user : e));
   res.send(users);
 }
