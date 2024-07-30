@@ -33,3 +33,10 @@ export function createUser(req, res) {
   users.push({ id: uuidv4(), ...req.body });
   res.send(users);
 }
+
+// @desc: delete user
+// @route: DELETE /users/:id
+export function deleteUser(req, res) {
+  users = users.filter((user) => user.id !== req.params.id);
+  res.send(users);
+}
