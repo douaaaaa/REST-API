@@ -2,7 +2,7 @@ import express from "express";
 import "dotenv/config";
 import users from "./routes/users.js";
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000;
 
 const app = express();
 
