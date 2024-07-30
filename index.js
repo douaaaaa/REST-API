@@ -1,9 +1,12 @@
 import express from "express";
 import "dotenv/config";
+import users from "./routes/users.js";
 
 const PORT = process.env.PORT;
 
 const app = express();
+
+app.use("/users", users);
 
 app.listen(PORT, (req, res) => {
   console.log(`The server is running on the port ${PORT}`);
