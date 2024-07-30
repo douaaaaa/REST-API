@@ -1,7 +1,7 @@
 {
   "name": "rust-api",
   "version": "1.0.0",
-  "description": "a rust api built with Node JS and Express",
+  "description": "A REST API built with Node JS and Express JS",
   "main": "index.js",
   "type": "module",
   "scripts": {
