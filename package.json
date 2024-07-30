@@ -1,5 +1,5 @@
 {
-  "name": "rust-api",
+  "name": "rest-api",
   "version": "1.0.0",
   "description": "A REST API built with Node JS and Express JS",
   "main": "index.js",
