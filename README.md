@@ -15,25 +15,25 @@ To install the dependencies and run the API, follow these steps:
 
 1. Clone this repository to your local machine:
 
-```terminal
+```
   git clone https://github.com/douaaaaa/REST-API
 ```
 
 2. Navigate to the project directory:
 
-```terminal
-  cd your_repository
+```
+  cd REST_API
 ```
 
 3. Install dependencies using npm or yarn:
 
-```terminal
+```
   npm install express uuid dotenv
 ```
 
 4. Start the server:
 
-```terminal
+```
   npm run dev
 ```
 
@@ -56,20 +56,20 @@ This API was developed primarily for learning purposes to deepen my understandin
 1. Fork the repository
 2. Create a new branch
 
-```terminal
+```
   git checkout -b feature
 ```
 
 3. Make your changes
 4. Commit your changes
 
-```terminal
+```
   git commit -am 'Add feature'
 ```
 
 5. Push to the branch
 
-```terminal
+```
   git push origin feature
 ```
 
